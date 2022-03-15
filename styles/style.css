@@ -1,0 +1,171 @@
+/* 
+Agregando estilos convencion que se debe seguir
+
+1. Posicionamiento
+
+2. Modelo de caja
+
+3. Tipografia
+
+4. Estilos visuales
+
+5. Otros
+ */
+:root
+{
+    --linear--bg:linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    --bitcoin-orange:#F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --warn-black: #201E1C;
+    --black: #282623;
+    --grey: #BABABA;
+    --of-white: #FAF8F7;
+    --just-whithe: #fff;
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
+}
+header
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /*Al ser column no centra  */
+    width: 100%;
+    
+    min-width: 32rem;
+    height: 33.4rem;
+    text-align: center;  /* Este si centro los elementos hijos pero luego se rompe y ya no */
+    /*align-items: center; /*Este tambien centra pero este sirve es con display flex */
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+header figure
+{
+    width: 15rem;
+    height: 2.4rem;
+    margin-top: 6rem;
+    align-self: center; /*Este tambien sirve pero este se le coloca a los hijos y los centra */
+}
+header figure img
+{
+    width: 100%;
+    height: auto;
+}
+.header__title-container
+{
+    width: 90%;
+    min-width: 28.8rem;
+    max-width: 90rem;
+    height: 21.8rem;
+    margin-top: 3.8rem;
+    text-align: center; /*Centra el texto */
+    align-self: center;  /*Centra el contenedor hijo */
+}
+.header__title-container h1
+{
+    font-size: 2.4rem;
+    font-weight: bold;   
+    line-height: 2.6rem;
+    color: var(--just-whithe);
+}
+.header__title-container p
+{
+    margin-top: 2.5rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+.header__title-container .header__button
+{
+    position: absolute;
+      /* left: 0;
+    right: 0;                /*Esta es una forma de centrarlo funciona muy bien*/
+    /*margin-right: auto;
+    margin-left: auto; */
+    left: calc(50% - 115px);  /*Esta nueva forma calc hace un calculo y nos centra el boton*/
+    top: 27rem;
+    display: block;
+    margin-top: 3.5rem;
+    padding: 1.5rem;       /*Hace que cresca nuestro boton y asi le puedo agregar estilos mejor*/
+    width: 22.9rem;
+    height: 4.8rem;
+    background-color: var(--of-white);
+    /*Sombras y centrado del boton*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    /*Ya esta la sombra*/
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+.header__button span
+{
+    display: inline-block;
+    width: 1.3rem;
+    height: 0.8rem;
+    margin-left: 1rem;
+    background-image: url('../assets/icons/down-arrow.svg');
+}
+main
+{
+    width: 100%;
+    min-width: 32rem;
+    height: auto;
+    background-color: var(--of-white);
+}
+.main-exchange-container
+{
+    width: 100%;
+    height: auto;
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+.main-exchange-container--title
+{
+    width: 90%;
+    min-width: 28.8rem;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+.main-exchange-container .backgroudImg
+{
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    background-image: url('../assets/img/Bitcoin.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-exchange-container h2
+{
+    margin-bottom: 3rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.main-exchange-container p
+{
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #BABABA;
+}
