@@ -426,3 +426,156 @@ main
     line-height: 2.6rem;
     color: var(--just-white);
 }
+/* Ultima seccion */
+.main__container--plans
+{
+    width: 100%;
+    min-width: 32rem;
+    padding-bottom: 7rem;
+    text-align: center;
+}
+.plans--title
+{
+    width: 90%;
+    min-width: 28.8rem;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+.plans--title h2
+{
+    padding-top: 5rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;   
+    color: var(--black);
+}
+.plans--title p
+{
+    padding-top: 3rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+/* Adios a los rem innecesarios */
+.container__plans--slider
+{
+    display: flex;
+    /* gap: 26px; */   /*Permite darle como un margen*/
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.container__plans--slider::-webkit-scrollbar 
+{
+    background-color: var(--soft-orange);
+    height: 3px;
+}
+  .container__plans--slider::-webkit-scrollbar-thumb
+{
+    background-color: var(--bitcoin-orange);
+}
+.container__plans--card
+{
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px 26px 0;
+    padding: 0 15px;
+    background: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.recommended
+{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    top: -15px;
+    left: calc(50% - 60px);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);
+}
+.silver
+{
+    background-color: #1A9AF7;
+}
+.basic
+{
+    background-color: rgb(173, 129, 70);
+}
+.plan-card--title
+{
+    padding-top: 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #000000;
+}
+.plan-card--price
+{
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: #000000;
+
+}
+.plan-card--price span
+{
+    font-size: 1.2rem;
+    font-weight: 300;
+    vertical-align: text-top;
+}
+.plan-card--saving
+{
+    font-size: 1.2rem;
+    color: #757575;
+}
+.plan-card--ca
+{
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #FAF8F7;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+.plan-card--silver
+{
+    border: 2px solid #1A9AF7;
+}
+.plan-card--basic
+{
+    border: 2px solid rgb(173, 129, 70);
+}
+.plan-card--ca span
+{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/icons/orange-right-arrow.svg');
+    vertical-align: text-bottom;
+}
+.plan-card--silver span
+{
+    opacity: 0.6;
+}
+.plan-card--basic span
+{
+    opacity: 0.4;
+}
