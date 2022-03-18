@@ -1,0 +1,18 @@
+.currency--comissions
+{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 934px;
+    margin:0 auto;
+}
+.commissions__table, .currency__table 
+{
+    width: 0%;
+}
+.product-cards--container
+{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 934px;
+    margin: 0 auto;
+}
