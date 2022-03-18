@@ -130,6 +130,7 @@ main
 .main-exchange-container
 {
     width: 100%;
+    position: relative;
     height: auto;
     padding-top: 80px;
     padding-bottom: 30px;
@@ -196,6 +197,32 @@ main
     height: 360px;
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
+}
+.arrow-left
+{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-image: url('../assets/icons/down-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: rotate(90deg); /*Excelente para rotar imagenes*/
+    bottom: 223px;
+    left: 15px;
+}
+.arrow-rigth
+{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-image: url('../assets/icons/down-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: rotate(270deg); /*Excelente para rotar imagenes*/
+    bottom: 223px;
+    right: 15px;
 }
 .currency__table .currency__table--title
 {
